@@ -222,7 +222,7 @@ function renderToday(){
       <h2>${esc(p.title)}</h2>
       <p>${esc(p.prompt)}</p>
       <div class="row">
-        <button class="tried" id="tried-${i}" aria-pressed="${pk.tried}">${pk.tried?"Tried it ✓":"Mark as tried"}</button>
+        <button class="tried" id="tried-${i}" aria-pressed="${pk.tried}">${pk.tried?"Tried today":"Try today"}</button>
         ${pk.tried?"":`<button class="ghost" id="swap-${i}">Swap for another</button>`}
       </div>`;
     box.appendChild(el);
